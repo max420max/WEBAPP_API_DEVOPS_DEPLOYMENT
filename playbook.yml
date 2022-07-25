@@ -1,6 +1,7 @@
 - name: Run with inline v2 compose
   hosts: localhost
   gather_facts: no
+  become: sudo
   tasks:
     - name: install docker
       apt:
@@ -12,4 +13,4 @@
         state: present
     - name: deploy app with docker compose
       shell: |
-        sudo docker-compose up -d
+        docker-compose up -d
