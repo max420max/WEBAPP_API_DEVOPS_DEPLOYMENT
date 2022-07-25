@@ -1,7 +1,7 @@
 - name: Run with inline v2 compose
   hosts: localhost
   gather_facts: no
-  become: sudo
+  become: yes
   tasks:
     - name: install docker
       apt:
