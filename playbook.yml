@@ -1,5 +1,5 @@
 - name: Run with inline v2 compose
-  hosts: [server]
+  hosts: localhost
   gather_facts: no
   #become: yes
   tasks:
