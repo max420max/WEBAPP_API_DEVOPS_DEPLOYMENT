@@ -13,6 +13,4 @@
         state: present
     - name: deploy app with docker compose
       shell: |
-        sudo su - root
-        ansible-playbook playbook.yml
         docker-compose up -d
